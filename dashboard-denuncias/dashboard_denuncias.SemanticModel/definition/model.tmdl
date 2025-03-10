@@ -1,0 +1,22 @@
+model Model
+	culture: es-CO
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-CO
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["denuncias-defensa-del-consumidor"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.140.1351.0 (25.02)+9bb96b6a5aee417774126f3416805b86efac121f
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table denuncias-defensa-del-consumidor
+ref table DateTableTemplate_134dc2eb-1963-4ae3-8110-4cc30ea71f17
+ref table LocalDateTable_f7005de2-6bb7-4ce8-9d74-8ee7ff777e2b
+
+ref cultureInfo es-CO
+

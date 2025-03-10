@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "dashboard_denuncias"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "c388b316-d75e-4d70-865d-285cc07e0b41"
+  }
+}

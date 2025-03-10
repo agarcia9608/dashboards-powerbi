@@ -1,0 +1,134 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.61\",\"type\":2},\"customTheme\":{\"name\":\"CY23SU028925621517319318.json\",\"version\":\"5.61\",\"type\":1}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":0,\"settings\":{\"isPersistentUserStateDisabled\":false,\"hideVisualContainerHeader\":false,\"useStylableVisualContainerHeader\":true,\"exportDataMode\":1,\"useNewFilterPaneExperience\":true,\"optOutNewFilterPaneExperience\":false,\"defaultFilterActionIsDataFilter\":true,\"useCrossReportDrillthrough\":false,\"allowChangeFilterTypes\":true,\"allowInlineExploration\":false,\"disableFilterPaneSearch\":false,\"enableDeveloperMode\":false,\"useEnhancedTooltips\":true,\"useScaledTooltips\":false,\"useDefaultAggregateDisplayName\":true,\"queryLimitOption\":6,\"customMemoryLimit\":\"1048576\",\"customTimeoutLimit\":\"225\"},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY23SU028925621517319318.json",
+            "path": "CY23SU028925621517319318.json",
+            "type": 201
+          },
+          {
+            "name": "Fondo-dashboard28052184896806875.png",
+            "path": "Fondo-dashboard28052184896806875.png",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'Fondo-dashboard.png'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"Fondo-dashboard28052184896806875.png\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Fit'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"outspace\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.2}}}}},\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"url\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"49D\"}}}}}]}}",
+      "displayName": "Página 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "43b8a9131da328226623",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"6a6475a363c237807662\",\"layouts\":[{\"id\":0,\"position\":{\"x\":916.6084788029925,\"y\":38.603491271820445,\"z\":8,\"width\":102.34413965087282,\"height\":33.21695760598504,\"tabOrder\":8}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Filtro periodo:\"}]}]}}]}}}",
+          "filters": "[]",
+          "height": 33.22,
+          "width": 102.34,
+          "x": 916.61,
+          "y": 38.60,
+          "z": 8.00
+        },
+        {
+          "config": "{\"name\":\"8e7727aa7ca0cdaf20da\",\"layouts\":[{\"id\":0,\"position\":{\"x\":100,\"y\":100,\"width\":300,\"height\":300,\"z\":7,\"tabOrder\":7}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 300.00,
+          "width": 300.00,
+          "x": 100.00,
+          "y": 100.00,
+          "z": 7.00
+        },
+        {
+          "config": "{\"name\":\"9030df0f236d6b7c6016\",\"layouts\":[{\"id\":0,\"position\":{\"x\":195.71072319201994,\"y\":132.86783042394015,\"z\":0,\"width\":142.7431421446384,\"height\":74.51371571072319,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"denuncias-defensa-del-consumidor.Denuncias\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"denuncias-defensa-del-consumidor\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Denuncias\"},\"Name\":\"denuncias-defensa-del-consumidor.Denuncias\",\"NativeReferenceName\":\"Denuncias\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Denuncias\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total de Denuncias'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 74.51,
+          "width": 142.74,
+          "x": 195.71,
+          "y": 132.87,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"b2f86ae3c9f8fb29e363\",\"layouts\":[{\"id\":0,\"position\":{\"x\":70.03039513677813,\"y\":226.6261398176292,\"z\":1,\"width\":377.38601823708206,\"height\":190.63829787234044,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"areaChart\",\"projections\":{\"Y\":[{\"queryRef\":\"denuncias-defensa-del-consumidor.Denuncias\"}],\"Category\":[{\"queryRef\":\"denuncias-defensa-del-consumidor.Fecha.Variación.Jerarquía de fechas.Año\",\"active\":true},{\"queryRef\":\"denuncias-defensa-del-consumidor.Fecha.Variación.Jerarquía de fechas.Mes\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"denuncias-defensa-del-consumidor\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Denuncias\"},\"Name\":\"denuncias-defensa-del-consumidor.Denuncias\",\"NativeReferenceName\":\"Denuncias\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variación\",\"Property\":\"Fecha\"}},\"Hierarchy\":\"Jerarquía de fechas\"}},\"Level\":\"Año\"},\"Name\":\"denuncias-defensa-del-consumidor.Fecha.Variación.Jerarquía de fechas.Año\",\"NativeReferenceName\":\"Fecha Año\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variación\",\"Property\":\"Fecha\"}},\"Hierarchy\":\"Jerarquía de fechas\"}},\"Level\":\"Mes\"},\"Name\":\"denuncias-defensa-del-consumidor.Fecha.Variación.Jerarquía de fechas.Mes\",\"NativeReferenceName\":\"Fecha Mes\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 190.64,
+          "width": 377.39,
+          "x": 70.03,
+          "y": 226.63,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"d2d8ce4ef1aaaa9b34f4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":447.0822942643391,\"y\":132.86783042394015,\"z\":2,\"width\":768.4788029925187,\"height\":263.0423940149626,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"denuncias-defensa-del-consumidor.Motivo\",\"active\":true}],\"Y\":[{\"queryRef\":\"denuncias-defensa-del-consumidor.Denuncias\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"denuncias-defensa-del-consumidor\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Motivo\"},\"Name\":\"denuncias-defensa-del-consumidor.Motivo\",\"NativeReferenceName\":\"Motivo\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Denuncias\"},\"Name\":\"denuncias-defensa-del-consumidor.Denuncias\",\"NativeReferenceName\":\"Denuncias\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Denuncias\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"maxMarginFactor\":{\"expr\":{\"Literal\":{\"Value\":\"50L\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 263.04,
+          "width": 768.48,
+          "x": 447.08,
+          "y": 132.87,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"d4f11d16b4e09e372c33\",\"layouts\":[{\"id\":0,\"position\":{\"x\":999.8784194528876,\"y\":27.23404255319149,\"z\":5,\"width\":215.92705167173253,\"height\":76.83890577507599,\"tabOrder\":5}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"denuncias-defensa-del-consumidor.Fecha\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"denuncias-defensa-del-consumidor\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Fecha\"},\"Name\":\"denuncias-defensa-del-consumidor.Fecha\",\"NativeReferenceName\":\"Fecha\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Fecha\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 76.84,
+          "width": 215.93,
+          "x": 999.88,
+          "y": 27.23,
+          "z": 5.00
+        },
+        {
+          "config": "{\"name\":\"d50d52eacdef4f2ed3e1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":70.02493765586034,\"y\":436.3092269326683,\"z\":4,\"width\":377.0573566084788,\"height\":251.3715710723192,\"tabOrder\":4}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(denuncias-defensa-del-consumidor.Comuna)\"},{\"queryRef\":\"denuncias-defensa-del-consumidor.Denuncias\"},{\"queryRef\":\"Divide(denuncias-defensa-del-consumidor.Denuncias, ScopedEval(denuncias-defensa-del-consumidor.Denuncias, []))\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"denuncias-defensa-del-consumidor\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Comuna\"},\"Name\":\"Sum(denuncias-defensa-del-consumidor.Comuna)\",\"NativeReferenceName\":\"Comuna\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Denuncias\"},\"Name\":\"denuncias-defensa-del-consumidor.Denuncias\",\"NativeReferenceName\":\"Denuncias\"},{\"Arithmetic\":{\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Denuncias\"}},\"Right\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Denuncias\"}},\"Scope\":[]}},\"Operator\":3},\"Name\":\"Divide(denuncias-defensa-del-consumidor.Denuncias, ScopedEval(denuncias-defensa-del-consumidor.Denuncias, []))\",\"NativeReferenceName\":\"%TG Denuncias\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Arithmetic\":{\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Denuncias\"}},\"Right\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Denuncias\"}},\"Scope\":[]}},\"Operator\":3}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"143.29289637394328D\"}}}},\"selector\":{\"metadata\":\"Divide(denuncias-defensa-del-consumidor.Denuncias, ScopedEval(denuncias-defensa-del-consumidor.Denuncias, []))\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"113.29675967615597D\"}}}},\"selector\":{\"metadata\":\"denuncias-defensa-del-consumidor.Denuncias\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"84.2394033409673D\"}}}},\"selector\":{\"metadata\":\"Sum(denuncias-defensa-del-consumidor.Comuna)\"}}],\"grid\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Denuncias por Comuna'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'None'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 251.37,
+          "width": 377.06,
+          "x": 70.02,
+          "y": 436.31,
+          "z": 4.00
+        },
+        {
+          "config": "{\"name\":\"d8662780aadaff5cbb58\",\"layouts\":[{\"id\":0,\"position\":{\"x\":90.67331670822942,\"y\":38.603491271820445,\"z\":6,\"width\":877.1072319201995,\"height\":65.53615960099751,\"tabOrder\":6}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Informe de Denuncias ante Defensa y Protección del consumidor\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"16pt\"}}]},{\"textRuns\":[{\"value\":\"Buenos Aires, Argentina | Años 2019 - 2020\",\"textStyle\":{\"fontSize\":\"12pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 65.54,
+          "width": 877.11,
+          "x": 90.67,
+          "y": 38.60,
+          "z": 6.00
+        },
+        {
+          "config": "{\"name\":\"dc328249fe342c25b534\",\"layouts\":[{\"id\":0,\"position\":{\"x\":447.0822942643391,\"y\":423.74064837905235,\"z\":3,\"width\":768.4788029925187,\"height\":263.94014962593513,\"tabOrder\":3}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Y\":[{\"queryRef\":\"denuncias-defensa-del-consumidor.Denuncias\"}],\"Category\":[{\"queryRef\":\"denuncias-defensa-del-consumidor.Rubro\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"denuncias-defensa-del-consumidor\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Denuncias\"},\"Name\":\"denuncias-defensa-del-consumidor.Denuncias\",\"NativeReferenceName\":\"Denuncias\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Rubro\"},\"Name\":\"denuncias-defensa-del-consumidor.Rubro\",\"NativeReferenceName\":\"Rubro\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Denuncias\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"maxMarginFactor\":{\"expr\":{\"Literal\":{\"Value\":\"50L\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 263.94,
+          "width": 768.48,
+          "x": 447.08,
+          "y": 423.74,
+          "z": 3.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ],
+  "theme": "CY23SU028925621517319318.json"
+}

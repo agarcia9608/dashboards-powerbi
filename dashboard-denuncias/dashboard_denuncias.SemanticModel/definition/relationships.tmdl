@@ -1,0 +1,5 @@
+relationship a604c100-d7dd-4e30-9246-ccc428e437b4
+	joinOnDateBehavior: datePartOnly
+	fromColumn: denuncias-defensa-del-consumidor.Fecha
+	toColumn: LocalDateTable_f7005de2-6bb7-4ce8-9d74-8ee7ff777e2b.Date
+

@@ -1,0 +1,98 @@
+table denuncias-defensa-del-consumidor
+	lineageTag: 2fdcb337-ca83-4b3d-b3d3-862da2e13be9
+
+	measure Denuncias = COUNTROWS('denuncias-defensa-del-consumidor')
+		formatString: #,0
+		lineageTag: e4430a7e-9a78-439c-95b2-d31d1a438fa3
+
+	column DenunciaID
+		dataType: int64
+		formatString: 0
+		lineageTag: b7a4946d-3b26-4b21-b47c-bfe7cdaca895
+		summarizeBy: count
+		sourceColumn: DenunciaID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Comuna
+		dataType: int64
+		formatString: 0
+		lineageTag: 4f787b94-eddf-428f-9750-36b5b82f75e3
+		summarizeBy: sum
+		sourceColumn: Comuna
+
+		annotation SummarizationSetBy = Automatic
+
+	column Motivo
+		dataType: string
+		lineageTag: cc4c08a6-9159-468c-b80e-7511bcc41459
+		summarizeBy: none
+		sourceColumn: Motivo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Rubro
+		dataType: string
+		lineageTag: 09108f72-26c5-437e-b1fe-ec730b647d48
+		summarizeBy: none
+		sourceColumn: Rubro
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fecha
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 14952e23-b69b-4150-aa77-b6d88a80fc59
+		summarizeBy: none
+		sourceColumn: Fecha
+
+		variation Variación
+			isDefault
+			relationship: a604c100-d7dd-4e30-9246-ccc428e437b4
+			defaultHierarchy: LocalDateTable_f7005de2-6bb7-4ce8-9d74-8ee7ff777e2b.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Hora C'
+		dataType: dateTime
+		formatString: Long Time
+		lineageTag: f3236aaf-35a3-440b-8268-a5a1b7f53e27
+		summarizeBy: none
+		sourceColumn: Hora C
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column Hora
+		dataType: int64
+		formatString: 0
+		lineageTag: 6b7d0ff9-8d08-415c-aa26-94aca90322c4
+		summarizeBy: sum
+		sourceColumn: Hora
+
+		annotation SummarizationSetBy = Automatic
+
+	partition denuncias-defensa-del-consumidor = m
+		mode: import
+		source =
+				let
+				    Origen = Csv.Document(File.Contents("C:\Projects\PowerBi\dashboards-powerbi\data\denuncias-defensa-del-consumidor.csv"),[Delimiter=";", Columns=5, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Origen, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"DenunciaID", Int64.Type}, {"Fecha_Creacion", type datetime}, {"Comuna", Int64.Type}, {"Motivo_Denuncia", type text}, {"Rubro", type text}}),
+				    #"Fecha insertada" = Table.AddColumn(#"Tipo cambiado", "Fecha", each DateTime.Date([Fecha_Creacion]), type date),
+				    #"Hora insertada" = Table.AddColumn(#"Fecha insertada", "Hora", each DateTime.Time([Fecha_Creacion]), type time),
+				    #"Hora insertada1" = Table.AddColumn(#"Hora insertada", "Hora.1", each Time.Hour([Fecha_Creacion]), Int64.Type),
+				    #"Columnas con nombre cambiado" = Table.RenameColumns(#"Hora insertada1",{{"Hora", "Hora C"}, {"Hora.1", "Hora"}}),
+				    #"Columnas quitadas" = Table.RemoveColumns(#"Columnas con nombre cambiado",{"Fecha_Creacion"}),
+				    #"Poner En Mayúsculas Cada Palabra" = Table.TransformColumns(#"Columnas quitadas",{{"Motivo_Denuncia", Text.Proper, type text}, {"Rubro", Text.Proper, type text}}),
+				    #"Columnas con nombre cambiado1" = Table.RenameColumns(#"Poner En Mayúsculas Cada Palabra",{{"Motivo_Denuncia", "Motivo"}})
+				in
+				    #"Columnas con nombre cambiado1"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "dashboard_denuncias"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "9593deb9-8d87-43af-bd4c-a0c6497b3df5"
+  }
+}
