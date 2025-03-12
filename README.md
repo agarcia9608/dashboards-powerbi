@@ -4,14 +4,13 @@ Este repositorio tiene como objetivo recopilar diferentes tableros desarrollados
 
 ## Organización del proyecto
 
-### Directorio *data*
-
-Contiene en archivos *CSV* los dataset utilizados para la construcción de los tableros.
-
 ### Directorio del Dashboard
 
 Contiene los archivos relacionados con el tablero desarrollado en `Power BI`. Dicha carpeta contiene un archivo `README.md` con el resumen del dashboard relacionado.
 
+### Directorio *data*
+
+Contiene en archivos en formato *CSV*, *EXCEL*, *txt*, entre otros,  los dataset utilizados para la construcción de los tableros.
 
 ## Proyectos desarrollados
 
